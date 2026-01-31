@@ -156,11 +156,12 @@
 ## 🎯 **Stagger Animation Pattern**
 
 ### How it works:
+
 ```tsx
 filteredPlaces.map((item, index) => (
   <Card 
     className="animate-fade-in"
-    style={{ animationDelay: `${index * 0.1}s` }}
+    style={% raw %}{{ animationDelay: `${index * 0.1}s` }}{% endraw %}
   >
     {/* Content */}
   </Card>
