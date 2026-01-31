@@ -326,10 +326,10 @@ className="transition-all duration-500"
 ### To adjust stagger delay:
 ```tsx
 // Faster sequence
-style={{ animationDelay: `${index * 0.05}s` }}
+style={% raw %}{{ animationDelay: `${index * 0.05}s` }}{% endraw %}
 
 // Slower sequence
-style={{ animationDelay: `${index * 0.2}s` }}
+style={% raw %}{{ animationDelay: `${index * 0.2}s` }}{% endraw %}
 ```
 
 ### To disable animations:
