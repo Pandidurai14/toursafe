@@ -15,8 +15,8 @@ const nextConfig: NextConfig = {
             },
         ],
     },
-    basePath: "/toursafe",
-    assetPrefix: "/toursafe/",
+    basePath: process.env.NODE_ENV === "production" ? "/toursafe" : "",
+    assetPrefix: process.env.NODE_ENV === "production" ? "/toursafe/" : "",
 };
 
 export default nextConfig;
